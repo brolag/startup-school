@@ -4,7 +4,7 @@
 
 ## The No-Code Revolution
 
-When Tope Awotona started building Calendly in 2013, he spent months learning to code and building the first version himself. But if he were starting today, he could have built the initial MVP in a weekend using no-code tools, validated the concept with real users, and only then invested in custom development.
+When Tope Awotona started building Calendly in 2013, he leveraged his computer science background and software industry experience to build the first version himself. But if he were starting today, he could have built the initial MVP in a weekend using no-code tools, validated the concept with real users, and only then invested in custom development.
 
 This shift represents a fundamental change in how startups can approach product development. No-code tools have evolved from simple website builders to sophisticated platforms capable of building complex, scalable applications.
 

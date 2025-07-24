@@ -1,0 +1,58 @@
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="nav-links">
+      <a href="{{ site.baseurl }}/" class="nav-link {% if page.url == '/' %}active{% endif %}">🏠 Inicio</a>
+      
+      <div class="nav-dropdown">
+        <a href="#" class="nav-link dropdown-toggle">📚 Módulos <span class="arrow">▼</span></a>
+        <div class="dropdown-content">
+          <div class="dropdown-section">
+            <h4>Foundation Track</h4>
+            <a href="{{ site.baseurl }}/modules/01-foundation/startup-mindset">Startup Mindset</a>
+            <a href="{{ site.baseurl }}/modules/01-foundation/vision-discovery">Finding Your Vision</a>
+            <a href="{{ site.baseurl }}/modules/01-foundation/user-research">Understanding Users</a>
+          </div>
+          <div class="dropdown-section">
+            <h4>Validation Track</h4>
+            <a href="{{ site.baseurl }}/modules/02-validation/idea-validation">Idea Validation</a>
+            <a href="{{ site.baseurl }}/modules/02-validation/mvp-development">MVP Development</a>
+            <a href="{{ site.baseurl }}/modules/02-validation/market-testing">Market Testing</a>
+          </div>
+          <div class="dropdown-section">
+            <h4>Building Track</h4>
+            <a href="{{ site.baseurl }}/modules/03-building/product-development">Product Development</a>
+            <a href="{{ site.baseurl }}/modules/03-building/iteration-process">Iteration Process</a>
+            <a href="{{ site.baseurl }}/modules/03-building/scaling-strategies">Scaling Strategies</a>
+          </div>
+          <div class="dropdown-section">
+            <h4>Growth Track</h4>
+            <a href="{{ site.baseurl }}/modules/04-growth/community-building">Community Building</a>
+            <a href="{{ site.baseurl }}/modules/04-growth/go-to-market">Go-to-Market</a>
+            <a href="{{ site.baseurl }}/modules/04-growth/fundraising">Fundraising</a>
+          </div>
+          <div class="dropdown-section">
+            <h4>Modern Practices</h4>
+            <a href="{{ site.baseurl }}/modules/05-modern/ai-integration">AI Integration</a>
+            <a href="{{ site.baseurl }}/modules/05-modern/no-code-development">No-Code Development</a>
+            <a href="{{ site.baseurl }}/modules/05-modern/remote-operations">Remote Operations</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-dropdown">
+        <a href="#" class="nav-link dropdown-toggle">🛠️ Recursos <span class="arrow">▼</span></a>
+        <div class="dropdown-content">
+          <div class="dropdown-section">
+            <h4>Learning Materials</h4>
+            <a href="{{ site.baseurl }}/resources/reading-list">📖 Reading List</a>
+            <a href="{{ site.baseurl }}/resources/case-studies">📊 Case Studies</a>
+            <a href="{{ site.baseurl }}/resources/templates">📋 Templates</a>
+            <a href="{{ site.baseurl }}/resources/tools">🔧 Tools & Platforms</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="{{ site.baseurl }}/CONTRIBUTING" class="nav-link {% if page.url contains 'CONTRIBUTING' %}active{% endif %}">🤝 Contribute</a>
+    </div>
+  </div>
+</nav>
