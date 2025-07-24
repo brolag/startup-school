@@ -3,14 +3,16 @@
 
 @import "{{ site.theme }}";
 
-/* Indie Mind inspired minimalist design */
+/* Modern startup school design */
 :root {
-  --primary-color: #111827;
-  --secondary-color: #6b7280;
-  --accent-color: #3b82f6;
-  --text-color: #374151;
-  --light-gray: #f9fafb;
-  --border-color: #e5e7eb;
+  --primary-color: #1a202c;
+  --secondary-color: #4a5568;
+  --accent-color: #3182ce;
+  --text-color: #2d3748;
+  --light-gray: #f7fafc;
+  --border-color: #e2e8f0;
+  --gradient-start: #667eea;
+  --gradient-end: #764ba2;
 }
 
 /* Typography - Clean and minimal */
@@ -22,75 +24,44 @@ body {
   background: white;
 }
 
-/* Header - Clean navigation */
-.site-header {
-  border-bottom: 1px solid var(--border-color);
-  background: white;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(10px);
+/* Page header with gradient */
+.page-header {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)) !important;
+  color: white !important;
+  padding: 4rem 0 !important;
 }
 
-.site-header .wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 3rem;
+.project-name {
+  font-size: 3.25rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.5rem !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;
 }
 
-.site-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--primary-color);
-  text-decoration: none;
+.project-tagline {
+  font-size: 1.25rem !important;
+  opacity: 0.95 !important;
+  font-weight: 400 !important;
+  margin-bottom: 2rem !important;
 }
 
-.site-title:hover {
-  opacity: 0.8;
-  text-decoration: none;
+/* Main content improvements */
+.main-content {
+  max-width: 1024px !important;
+  margin: 0 auto !important;
+  padding: 2rem !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
 }
 
-/* Navigation menu */
-.site-nav {
-  display: flex;
-  align-items: center;
+/* Navigation improvements */
+.main-content h1:first-child {
+  display: none; /* Hide the redundant H1 */
 }
 
-.site-nav .page-link {
-  color: var(--secondary-color);
-  font-weight: 500;
-  font-size: 0.95rem;
-  text-decoration: none;
-  margin-right: 2rem;
-  padding: 0.5rem 0;
-  transition: color 0.2s ease;
-  border-bottom: 2px solid transparent;
-}
-
-.site-nav .page-link:hover {
-  color: var(--primary-color);
-  text-decoration: none;
-  border-bottom-color: var(--accent-color);
-}
-
-.site-nav .page-link.current {
-  color: var(--primary-color);
-  border-bottom-color: var(--accent-color);
-}
-
-/* Mobile menu button */
-.menu-icon {
-  display: none;
-  cursor: pointer;
-  padding: 0.5rem;
-}
-
-.menu-icon svg {
-  width: 24px;
-  height: 24px;
-  fill: var(--secondary-color);
+/* Better spacing for content */
+.main-content > *:first-child {
+  margin-top: 0 !important;
 }
 
 /* Content wrapper */
@@ -106,36 +77,67 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
-  font-weight: 600;
-  line-height: 1.3;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.main-content h1, 
+.main-content h2, 
+.main-content h3, 
+.main-content h4, 
+.main-content h5, 
+.main-content h6 {
+  color: var(--primary-color) !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1rem !important;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
+.main-content h1 {
+  font-size: 2.5rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem !important;
 }
 
-h2 {
-  font-size: 1.875rem;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.5rem;
+.main-content h2 {
+  font-size: 1.875rem !important;
+  border-bottom: 2px solid var(--accent-color) !important;
+  padding-bottom: 0.75rem !important;
+  margin-top: 3rem !important;
+}
+
+.main-content h3 {
+  font-size: 1.5rem !important;
+  color: var(--accent-color) !important;
+  margin-top: 2rem !important;
 }
 
 /* Links - Subtle and clean */
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: opacity 0.2s ease;
+.main-content a {
+  color: var(--accent-color) !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  border-bottom: 1px solid transparent !important;
 }
 
-a:hover {
-  opacity: 0.8;
-  text-decoration: underline;
+.main-content a:hover {
+  color: var(--gradient-start) !important;
+  text-decoration: none !important;
+  border-bottom-color: var(--gradient-start) !important;
+}
+
+/* Navigation links at bottom */
+.main-content p:last-child a {
+  background: var(--light-gray) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 6px !important;
+  border: 1px solid var(--border-color) !important;
+  display: inline-block !important;
+  margin: 0.25rem !important;
+  font-weight: 500 !important;
+}
+
+.main-content p:last-child a:hover {
+  background: var(--accent-color) !important;
+  color: white !important;
+  border-color: var(--accent-color) !important;
 }
 
 /* Lists */
@@ -165,12 +167,19 @@ pre {
 }
 
 /* Blockquotes */
-blockquote {
-  border-left: 3px solid var(--accent-color);
-  padding-left: 1.5rem;
-  margin: 2rem 0;
-  font-style: italic;
-  color: var(--secondary-color);
+.main-content blockquote {
+  border-left: 4px solid var(--accent-color) !important;
+  padding: 1.5rem 2rem !important;
+  margin: 2rem 0 !important;
+  background: var(--light-gray) !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-style: italic !important;
+  color: var(--secondary-color) !important;
+  font-size: 1.1rem !important;
+}
+
+.main-content blockquote p {
+  margin: 0 !important;
 }
 
 /* Tables */
@@ -202,69 +211,39 @@ th {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .wrapper {
-    padding: 0 1rem;
+  .project-name {
+    font-size: 2.5rem !important;
   }
   
-  h1 {
-    font-size: 2rem;
+  .project-tagline {
+    font-size: 1.1rem !important;
   }
   
-  h2 {
-    font-size: 1.5rem;
+  .main-content {
+    padding: 1rem !important;
   }
   
-  /* Mobile navigation */
-  .site-header .wrapper {
-    flex-direction: column;
-    align-items: flex-start;
+  .main-content h1 {
+    font-size: 2rem !important;
   }
   
-  .site-nav {
-    width: 100%;
-    margin-top: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-    display: none;
-  }
-  
-  .site-nav.open {
-    display: flex;
-  }
-  
-  .site-nav .page-link {
-    margin: 0;
-    margin-bottom: 1rem;
-    padding: 0.75rem 0;
-    width: 100%;
-    border-bottom: 1px solid var(--border-color);
-  }
-  
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  .main-content h2 {
+    font-size: 1.5rem !important;
   }
 }
 
-/* Override minima theme defaults */
-.site-header {
-  min-height: auto !important;
+/* Additional improvements */
+.main-content ul li,
+.main-content ol li {
+  margin: 0.75rem 0 !important;
 }
 
-.site-nav .page-link:not(:last-child) {
-  margin-right: 0 !important;
+.main-content strong {
+  color: var(--primary-color) !important;
+  font-weight: 600 !important;
 }
 
-.site-nav {
-  line-height: normal !important;
-}
-
-.site-header a {
-  color: inherit !important;
-}
-
-.site-header a:hover {
-  color: inherit !important;
+/* Better spacing for paragraphs */
+.main-content p {
+  margin: 1.25rem 0 !important;
 }
