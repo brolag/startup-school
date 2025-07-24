@@ -13,14 +13,7 @@ plugins:
 
 # Theme options:
 # 1. GitHub's supported themes (uncomment one):
-# theme: minima
-# theme: jekyll-theme-cayman
-# theme: jekyll-theme-minimal
-# theme: jekyll-theme-architect
-# theme: jekyll-theme-slate
-# theme: jekyll-theme-modernist
-# theme: jekyll-theme-tactile
-theme: jekyll-theme-cayman
+theme: minima
 
 # Navigation
 navigation:
