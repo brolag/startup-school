@@ -35,8 +35,9 @@ body {
 
 .site-header .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 3rem;
 }
 
 .site-title {
@@ -62,7 +63,7 @@ body {
   font-weight: 500;
   font-size: 0.95rem;
   text-decoration: none;
-  margin-left: 2rem;
+  margin-right: 2rem;
   padding: 0.5rem 0;
   transition: color 0.2s ease;
   border-bottom: 2px solid transparent;
