@@ -4,35 +4,43 @@
 
 ## What is an MVP?
 
-A **Minimum Viable Product** is:
-- The simplest version that delivers core value
-- Built to test a specific hypothesis
-- Designed to learn, not to impress
-- Fast to build and iterate
+When Drew Houston first had the idea for Dropbox, he could have spent months building file-syncing technology, setting up servers, and creating a polished interface. Instead, he spent a weekend making a 3-minute video showing how file syncing would work. That video generated 75,000 signups overnight and validated that people desperately wanted this solution.
 
-**MVP ≠ Prototype**: An MVP is a real product that people can use and (potentially) pay for.
+This is the essence of an MVP: it's not about building a smaller version of your full product—it's about finding the fastest way to test whether people actually want what you think they want.
+
+The biggest misconception about MVPs is that they need to be functional products. Sometimes the most effective MVP is just a facade that appears to work while you manually handle everything behind the scenes. The goal isn't to impress anyone with your technical prowess; it's to learn whether your core hypothesis about user behavior is correct.
+
+Think of your MVP as an experiment, not a product launch. Every feature you include should be there to test a specific assumption about your users. If you can't articulate what you're trying to learn from a feature, don't build it. Your MVP should be embarrassingly simple—so simple that you're almost ashamed to show it to people. If you're not a little embarrassed by your MVP, it's probably too complex.
+
+The key insight is that people don't buy products—they buy better versions of themselves. Your MVP needs to deliver that transformation, even if it does so in a clunky, manual, or incomplete way. A working solution that's 80% manual is infinitely more valuable than a perfectly automated solution that solves the wrong problem.
 
 ## MVP Types by Stage
 
 ### 1. Problem Validation MVPs
 
-**Landing Page MVP**
-- Single page explaining your solution
-- Signup form to gauge interest
-- Can build in 1-2 days
-- Test: Do people want this?
+**The Landing Page MVP: Testing Desire Before Building**
 
-**Concierge MVP**
-- Manually deliver the service
-- No automation or software
-- Direct interaction with customers
-- Test: Is the value proposition compelling?
+Buffer's Joel Gascoigne wanted to build a social media scheduling tool, but instead of building it first, he created a simple two-page website. The first page explained the concept, the second page said "You caught us before we're ready! Leave your email and we'll let you know when we're ready." 
 
-**Wizard of Oz MVP**
-- Appears automated but is manual behind the scenes
-- Users think it's a full product
-- You handle requests manually
-- Test: Would people use this if it existed?
+Within days, he had hundreds of signups from people who wanted the product that didn't exist yet. Only then did he start building. This approach saved him months of development time and gave him confidence that people actually wanted what he was planning to build.
+
+Your landing page MVP should tell a story that helps visitors imagine how their life will be better with your solution. Don't just list features—paint a picture of the transformation you're offering. Include specific, concrete examples of how someone would use your product and what they would achieve with it.
+
+**The Concierge MVP: Delivering Value Manually**
+
+When the founders of Food on the Table wanted to help families plan meals and save money on groceries, they didn't build an app. Instead, founder Manuel Rosso personally called families every week, asked about their preferences and schedules, then created custom meal plans and shopping lists by hand. He even went to grocery stores to check prices and find deals.
+
+This manual approach taught them exactly what information families needed, how they preferred to receive it, and what parts of the process were most valuable. Only after manually serving dozens of families did they start automating parts of the process. By the time they built their app, they knew exactly what it needed to do because they had already been delivering the value by hand.
+
+The concierge approach works especially well for complex, personal services where the value comes from customization and human insight. You learn not just whether people want your solution, but exactly how they want to receive it.
+
+**The Wizard of Oz MVP: Faking It Until You Make It**
+
+Zappos founder Nick Swinmurn wanted to test whether people would buy shoes online without trying them on first. Instead of building inventory management systems and negotiating with shoe manufacturers, he took photos of shoes at local shoe stores, posted them online, and when someone ordered a pair, he went to the store, bought them at retail price, and shipped them to the customer.
+
+This approach let him test the core hypothesis—will people buy shoes online—without any of the complexity of running a real shoe business. He lost money on every sale, but he proved that the market existed. Only after validating demand did he start building the infrastructure to make the business profitable.
+
+The key to a successful Wizard of Oz MVP is making sure the user experience feels real and complete, even though everything is manual behind the scenes. Users should get the full value they're expecting, even if it takes you 10 times longer to deliver it than it would with a fully automated system.
 
 ### 2. Solution Validation MVPs
 
