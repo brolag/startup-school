@@ -22,11 +22,21 @@ body {
   background: white;
 }
 
-/* Header - Simple and clean */
+/* Header - Clean navigation */
 .site-header {
   border-bottom: 1px solid var(--border-color);
   background: white;
   padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-title {
@@ -34,6 +44,52 @@ body {
   font-weight: 600;
   color: var(--primary-color);
   text-decoration: none;
+}
+
+.site-title:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Navigation menu */
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .page-link {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  margin-left: 2rem;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav .page-link:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom-color: var(--accent-color);
+}
+
+.site-nav .page-link.current {
+  color: var(--primary-color);
+  border-bottom-color: var(--accent-color);
+}
+
+/* Mobile menu button */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--secondary-color);
 }
 
 /* Content wrapper */
@@ -156,4 +212,58 @@ th {
   h2 {
     font-size: 1.5rem;
   }
+  
+  /* Mobile navigation */
+  .site-header .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .site-nav {
+    width: 100%;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+  
+  .site-nav.open {
+    display: flex;
+  }
+  
+  .site-nav .page-link {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0.75rem 0;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+/* Override minima theme defaults */
+.site-header {
+  min-height: auto !important;
+}
+
+.site-nav .page-link:not(:last-child) {
+  margin-right: 0 !important;
+}
+
+.site-nav {
+  line-height: normal !important;
+}
+
+.site-header a {
+  color: inherit !important;
+}
+
+.site-header a:hover {
+  color: inherit !important;
 }
