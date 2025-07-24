@@ -1,0 +1,32 @@
+# Site settings
+title: "The Startup School 🚀"
+description: "A comprehensive startup education program - Modern, battle-tested knowledge for building successful ventures in 2025"
+url: "https://brolag.github.io"
+baseurl: "/startup-school"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Theme options:
+# 1. GitHub's supported themes (uncomment one):
+# theme: minima
+# theme: jekyll-theme-cayman
+# theme: jekyll-theme-minimal
+# theme: jekyll-theme-architect
+# theme: jekyll-theme-slate
+# theme: jekyll-theme-modernist
+# theme: jekyll-theme-tactile
+theme: jekyll-theme-cayman
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Reading List"
+    url: "/resources/reading-list"
+  - title: "Templates"
+    url: "/resources/templates"
